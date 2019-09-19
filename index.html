@@ -1,7 +1,7 @@
 <!DOCTYPE html><html>
     <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
             <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet">
         <title>
             Login Page
@@ -14,44 +14,54 @@
                 The Internship
                 </a>
                 
-                <a href="#Login" class="header-link">
+                <a href="#" class="header-link loginbtn">
                     Login
                 </a>
               
                 </a>
-                <a href="#Register" class="header-link">
+                <a href="#" class="header-link regbtn">
                     Register
                 </a>
-               
-                
             </nav>
         </header>
         <section>
 
-        <main>
+        <div id="loginView">
+            <main>
                 <p class="main-header">Sign In To Internship Program</p>
+                <div class="alert " role="alert"></div>
                 <form class="form">
-                    
                     <input type="text" name="username" id="username" placeholder="Username"><br>
-                    
                     <input type="password" name="password" id="password" placeholder="Password"><br>
-                    <input type="submit" id="submit" value="Sign in">
-                  </form>
-        </main>
+                    <input type="submit" id="submitLogin" value="Sign in">
+                </form>
+            </main>
+    
+            <aside>
+                <a href="#" class="login-aside"> Keep me signed in</a>
+                <a href="#" class="login-aside">Forget Password?</a>
+            </aside>
+            <button class="register-btn regbtn" type="button">Register</button>
+        </div>
 
-        <aside>
-            <a href="#" class="login-aside"> Keep me signed in</a>
-            <a href="#" class="login-aside">Forget Password?</a>
-        </aside>
-            <button class="register-btn" type="button">Register</button>
 
-        
+        <div id="regView">
+            <main>
+                <p class="main-header">Register For The Internship Program</p>
+                <div class="alert " role="alert"></div>
+                <form class="form">
+                    <input type="text" name="name" id="regname" placeholder="Name (First and Last)"><br>
+                    <input type="text" name="Username" id="regusername" placeholder="Username"><br>
+                    <input type="email" name="Email" id="regemail" placeholder="Email Address"><br>                    
+                    <input type="password" name="password" id="regpassword" placeholder="Password"><br>
+                    <input type="submit" id="submitReg" value="Register">
+                </form>
+            </main>
+            <button class="register-btn loginbtn" type="button">Already have an account?</button>       
+        </div>
     </section>
-
-  
-
-
-    <script src="script.js"></script>
-    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
     
 </html>
